@@ -94,7 +94,9 @@ st.markdown("""
 # Header
 
 
-st.image("images/banner.png", use_container_width=True)
+import os
+image_path = os.path.join(os.getcwd(), 'images', 'logo.png')
+st.sidebar.image(image_path, width=300)
 
 
 st.markdown("""
