@@ -307,7 +307,7 @@ class QuizApp:
                 st.info(f"Explanation: {question['explanation']}")
 
     def main(self) -> None:
-        st.title("🌍 Language Learning Quiz")
+        st.title("🌍 Languito Quiz")
         
         # Sidebar selections
         with st.sidebar:

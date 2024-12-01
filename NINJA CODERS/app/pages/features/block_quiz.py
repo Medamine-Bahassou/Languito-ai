@@ -51,7 +51,7 @@ def text_to_speech_quiz(sentence):
     return buf
 
 # Streamlit setup
-st.title("🎤️ Language Learning Quiz!")
+st.title("🎤️ Languito Block Quiz!")
 st.markdown("**Listen to the audio and arrange the blocks in the correct order. Watch out for tricky words!**")
 
 # Generate or retrieve a sentence

@@ -50,7 +50,7 @@ if 'audio_container_output' not in st.session_state:
     st.session_state.audio_container_output = None
 
 # Streamlit app
-st.set_page_config(page_title="PolyGlot Translator", page_icon="🌐", layout="wide")
+st.set_page_config(page_title="Languito Translator", page_icon="🌐", layout="wide")
 
 # Title section
 st.markdown("""
