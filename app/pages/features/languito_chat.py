@@ -210,9 +210,6 @@ class StreamlitApp:
         st.title("💬 Languito Chat!")
         
         self.display_chat_messages()
-        with st.chat_message("assistant"):
-            st.write("Hi, I'm Languito, your language teacher!")
-
         if prompt := st.chat_input("Type your message here..."):
             try:
                 with st.chat_message("user"):
