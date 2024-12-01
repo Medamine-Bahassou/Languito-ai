@@ -13,7 +13,7 @@ pages = {
         st.Page("pages/features/text2speech.py", title="🗣 Prononciation"),
         st.Page("pages/features/languito_dictionnary.py", title="📙 Dictionnary"),
     ],
-}  
+}
 
 pg = st.navigation(pages)
 pg.run()
