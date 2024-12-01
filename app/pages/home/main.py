@@ -1,4 +1,6 @@
 import streamlit as st
+import os
+from PIL import Image
 
 # Page configuration
 st.set_page_config(
@@ -8,26 +10,21 @@ st.set_page_config(
 )
 
 # Add logo at the top of sidebar
-import os
-
-# Get the absolute path to the image
 image_path = os.path.join(os.getcwd(), 'images', 'logo.png')
 
-# Display the image in the sidebar
-# st.sidebar.image(image_path, width=300)
-if os.path.exists(image_path):
-    st.sidebar.image(image_path, width=300)
-else:
-    st.sidebar.error("Image not found at path: " + image_path)
+# Try to load the logo with PIL
+try:
+    image_1 = Image.open(image_path)
+    st.sidebar.image(image_1, width=300)
+except Exception as e:
+    st.sidebar.warning(f"Logo not found or could not be loaded. Error: {e}")
+
 # Custom CSS
 st.markdown("""
     <style>
-        /* Main container styling */
         .stApp {
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
         }
-        
-        /* Header styling */
         .header-container {
             text-align: center;
             padding: 3rem 0;
@@ -37,21 +34,17 @@ st.markdown("""
             margin-bottom: 2rem;
             animation: fadeIn 1s ease-in;
         }
-        
         .main-title {
             font-size: 3.5rem;
             color: #2c3e50;
             margin-bottom: 1rem;
             font-weight: bold;
         }
-        
         .subtitle {
             font-size: 1.4rem;
             color: #34495e;
             opacity: 0.9;
         }
-        
-        /* Feature card styling */
         .feature-card {
             background: white;
             padding: 1.5rem;
@@ -60,12 +53,9 @@ st.markdown("""
             transition: transform 0.3s ease;
             margin: 1rem 0;
         }
-        
         .feature-card:hover {
             transform: translateY(-5px);
         }
-        
-        /* Statistics box styling */
         .stat-box {
             background: white;
             padding: 1.5rem;
@@ -74,19 +64,14 @@ st.markdown("""
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
-        
         .stat-box:hover {
             transform: scale(1.05);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        
-        /* Animations */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        
-        /* Responsive design */
         @media (max-width: 768px) {
             .main-title {
                 font-size: 2.5rem;
@@ -98,17 +83,13 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-
-
 # Header
 banner_path = os.path.join(os.getcwd(), 'images', 'banner.png')
-
-
-# st.image(banner_path, use_container_width=True)
-if os.path.exists(banner_path):
-    st.sidebar.image(banner_path, width=300)
-else:
-    st.sidebar.error("Image not found at path: " + banner_path)
+try:
+    banner_image = Image.open(banner_path)
+    st.image(banner_image, use_container_width=True)
+except Exception as e:
+    st.warning(f"Banner image not found or could not be loaded. Error: {e}")
 
 st.markdown("""
     <div class="header-container">
@@ -122,27 +103,24 @@ st.markdown("""
     <div class="feature-card">
         <h2>Features</h2>
         <ul>
-            <li>Quizes </li>
-            <li>AI chat assistant </li>
+            <li>Quizzes</li>
+            <li>AI chat assistant</li>
             <li>Translator</li>
-            <li>Prononciation guide</li>
-            <li>Dictionnary</li>
+            <li>Pronunciation guide</li>
+            <li>Dictionary</li>
         </ul>
     </div>
-    
 """, unsafe_allow_html=True)
 
-# workflow
-st.markdown("""
-        <h2>Workflow</h2>
-""", unsafe_allow_html=True)
-# st.image("images/workflow.png")
+# Workflow
+st.markdown("<h2>Workflow</h2>", unsafe_allow_html=True)
 workflow_path = os.path.join(os.getcwd(), 'images', 'workflow.png')
-if os.path.exists(workflow_path):
-    st.sidebar.image(workflow_path, width=300)
-else:
-    st.sidebar.error("Image not found at path: " + workflow_path)
- 
+try:
+    workflow_image = Image.open(workflow_path)
+    st.image(workflow_image)
+except Exception as e:
+    st.warning(f"Workflow image not found or could not be loaded. Error: {e}")
+
 # Call to action
 st.markdown("""
     <div style='text-align: center; margin-top: 3rem; padding: 2rem; background: white; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);'>
