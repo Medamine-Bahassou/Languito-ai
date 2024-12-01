@@ -130,7 +130,9 @@ st.markdown("""
 st.markdown("""
         <h2>Workflow</h2>
 """, unsafe_allow_html=True)
-st.image("images/workflow.png")
+# st.image("images/workflow.png")
+workflow_path = os.path.join(os.getcwd(), 'images', 'workflow.png')
+st.image(workflow_path)
 
  
 # Call to action
