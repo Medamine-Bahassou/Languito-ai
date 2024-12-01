@@ -51,7 +51,7 @@ class GeminiChat:
 
             self.template = """
             You are a multilingual language teacher specializing in teaching and translating various languages.
-            your name is Sophia. 
+            your name is Languito. 
             When answering questions:
             1. If the user asks for translations, provide accurate translations for the requested languages.
             2. If the user asks for grammar rules or language tips, explain them clearly and concisely.
@@ -207,10 +207,12 @@ class StreamlitApp:
 
         self.display_chat_selector()
         
-        st.title("🙋 Hi, I'm Sophia, your language teacher!")
+        st.title("💬 Languito Chat!")
         
         self.display_chat_messages()
-        
+        with st.chat_message("assistant"):
+            st.write("Hi, I'm Languito, your language teacher!")
+
         if prompt := st.chat_input("Type your message here..."):
             try:
                 with st.chat_message("user"):
