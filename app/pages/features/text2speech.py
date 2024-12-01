@@ -15,7 +15,7 @@ st.set_page_config(page_title="PolyGlot Speech", page_icon="🎙", layout="wide"
 # Title section
 st.markdown("""
     <div style='text-align: center; padding: 2rem 0;'>
-        <h1 style='font-size: 3rem;'>🌐 PolyGlot Speech</h1>
+        <h1 style='font-size: 3rem;'>🌐 Languito Speech</h1>
         <p style='font-size: 1.2rem; opacity: 0.8;'>Your Advanced Multi-Language Text-to-Speech Platform</p>
     </div>
 """, unsafe_allow_html=True)

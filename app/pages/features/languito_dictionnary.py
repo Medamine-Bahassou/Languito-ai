@@ -19,7 +19,7 @@ genai.configure(api_key=GOOGLE_API_KEY)
 warnings.filterwarnings("ignore")
 
 # Streamlit app configuration
-st.set_page_config(page_title="Word Context Explorer", page_icon="📖", layout="wide")
+st.set_page_config(page_title="Languito Dictionnary", page_icon="📖", layout="wide")
 
 # Language mapping for gTTS
 LANGUAGE_CODES = {

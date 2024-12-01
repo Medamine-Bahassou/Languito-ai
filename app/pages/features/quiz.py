@@ -241,7 +241,7 @@ class QuizApp:
 
     def setup_page(self) -> None:
         st.set_page_config(
-            page_title="Language Learning Quiz",
+            page_title="Languito Quiz",
             page_icon="🌍",
             layout="wide"
         )

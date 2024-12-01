@@ -55,7 +55,7 @@ st.set_page_config(page_title="PolyGlot Translator", page_icon="🌐", layout="w
 # Title section
 st.markdown("""
     <div style='text-align: center; padding: 2rem 0;'>
-        <h1 style='font-size: 3rem;'>🌏 PolyGlot Translator</h1>
+        <h1 style='font-size: 3rem;'>🌏 Languito Translator</h1>
         <p style='font-size: 1.2rem; opacity: 0.8;'>Your Advanced Language Translation Platform</p>
     </div>
 """, unsafe_allow_html=True)
