@@ -100,6 +100,12 @@ Languito.ai was founded by a passionate team of software engineering students fr
   2nd Year Software Engineering Student at FSTT
 
 
+## 🔗 Links :
+* 🔴 Demo : https://languito-ai.streamlit.app/
+* 🎥 Video Demo : 
+* 🎥 Video Pitch : 
+* 📄 Pitch : 
+
 ## 🛠 Installation
 
 ### Prerequisites
