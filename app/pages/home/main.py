@@ -98,9 +98,10 @@ st.markdown("""
 
 
 # Header
+banner_path = os.path.join(os.getcwd(), 'images', 'banner.png')
 
 
-st.image("images/banner.png", use_container_width=True)
+st.image(banner_path, use_container_width=True)
 
 
 st.markdown("""
