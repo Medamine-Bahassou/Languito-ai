@@ -167,26 +167,3 @@ with col4:
     - Click on the speaker icon to hear the text spoken
     """)
 
-# Sidebar information
-st.sidebar.header("About PolyGlot Translator")
-st.sidebar.info(
-    "PolyGlot Translator uses the Hugging Face Inference API with state-of-the-art models for accurate translations between multiple languages. It now includes text-to-speech functionality for both input and translated text."
-)
-
-st.sidebar.markdown("### Features")
-st.sidebar.markdown("""
-- Multiple language pairs
-- Real-time character and word counting
-- Text-to-speech for input and output
-- Improved UI with custom styling
-- Enhanced error handling
-- Fast translation
-- Side-by-side input and output
-""")
-
-st.sidebar.markdown("### Version")
-st.sidebar.markdown("v2.4.0")
-
-# Footer
-st.markdown("---")
-st.markdown("Created with ❤ using Streamlit, Hugging Face, and gTTS")

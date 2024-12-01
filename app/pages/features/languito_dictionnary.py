@@ -312,24 +312,3 @@ if context_button and word_input:
     
     st.markdown("</div>", unsafe_allow_html=True)
 
-# Sidebar information
-st.sidebar.header("About Word Context Explorer")
-st.sidebar.info(
-    "Explore word meanings, usages, and origins powered by AI."
-)
-
-st.sidebar.markdown("### Features")
-st.sidebar.markdown("""
-- AI-powered word context
-- Comprehensive linguistic analysis
-- Real-time word exploration
-- Multiple linguistic dimensions
-- Comprehensive audio pronunciation
-""")
-
-st.sidebar.markdown("### Version")
-st.sidebar.markdown("v2.2.0 (Gemini API + Comprehensive Text-to-Speech)")
-
-# Footer
-st.markdown("---")
-st.markdown("Created with ❤️ using Streamlit, Google Gemini & gTTS")
