@@ -8,7 +8,13 @@ st.set_page_config(
 )
 
 # Add logo at the top of sidebar
-st.sidebar.image("images/logo.png", width=300)  # Adjust width as needed
+import os
+
+# Get the absolute path to the image
+image_path = os.path.join(os.getcwd(), 'images', 'logo.png')
+
+# Display the image in the sidebar
+st.sidebar.image(image_path, width=300)
 
 # Custom CSS
 st.markdown("""
@@ -94,9 +100,7 @@ st.markdown("""
 # Header
 
 
-import os
-image_path = os.path.join(os.getcwd(), 'images', 'logo.png')
-st.sidebar.image(image_path, width=300)
+st.image("images/banner.png", use_container_width=True)
 
 
 st.markdown("""
