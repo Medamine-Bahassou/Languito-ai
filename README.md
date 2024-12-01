@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b68d70bf-5419-4730-ae3e-390c8f8d97d3" width="270"/>
+</div>
+
+
 # Languito.ai 🌍📚
 
 Languito.ai is an innovative AI-powered language learning platform designed to transform language education for Moroccan children. Our mission is to make language learning engaging, interactive, and culturally relevant.
