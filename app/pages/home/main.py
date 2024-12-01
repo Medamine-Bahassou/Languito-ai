@@ -14,8 +14,11 @@ import os
 image_path = os.path.join(os.getcwd(), 'images', 'logo.png')
 
 # Display the image in the sidebar
-st.sidebar.image(image_path, width=300)
-
+# st.sidebar.image(image_path, width=300)
+if os.path.exists(image_path):
+    st.sidebar.image(image_path, width=300)
+else:
+    st.sidebar.error("Image not found at path: " + image_path)
 # Custom CSS
 st.markdown("""
     <style>
@@ -101,8 +104,11 @@ st.markdown("""
 banner_path = os.path.join(os.getcwd(), 'images', 'banner.png')
 
 
-st.image(banner_path, use_container_width=True)
-
+# st.image(banner_path, use_container_width=True)
+if os.path.exists(banner_path):
+    st.sidebar.image(banner_path, width=300)
+else:
+    st.sidebar.error("Image not found at path: " + banner_path)
 
 st.markdown("""
     <div class="header-container">
@@ -132,8 +138,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 # st.image("images/workflow.png")
 workflow_path = os.path.join(os.getcwd(), 'images', 'workflow.png')
-st.image(workflow_path)
-
+if os.path.exists(workflow_path):
+    st.sidebar.image(workflow_path, width=300)
+else:
+    st.sidebar.error("Image not found at path: " + workflow_path)
  
 # Call to action
 st.markdown("""
